@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close" id="closePopup">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-x"
+      >
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </span>
+    <h2>Inscrivez-vous à notre newsletter</h2><br>
+    <form action="#" method="post">
+      <input type="email" placeholder="Entrez votre adresse e-mail" name="email" required><br><br>
+      <input type="submit" value="S'inscrire">
+    </form>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('popup');
+    const closePopupBtn = document.getElementById('closePopup');
+
+    // Vérifier si la pop-up a déjà été affichée
+    const popupShown = localStorage.getItem('popupShown');
+
+    // Si la pop-up n'a pas été affichée, l'afficher après 2 secondes
+    if (!popupShown) {
+      setTimeout(() => {
+        popup.style.display = 'block';
+        localStorage.setItem('popupShown', 'true'); // Enregistrer que la pop-up a été affichée
+      }, 2000);
+    }
+
+    closePopupBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  });
+</script>
+  <nav>
+    <header>
+      <div class="logo">
+          <a href="Accueil.html"><img src="./img/logo1.svg" alt="Logo"></a>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="Accueil.html">Accueil</a></li>
+              <li><a href="Propose.html">Ce que l'on propose</a></li>
+              <li><a href="./abonnement.html">Nos abonnements</a></li>
+          </ul>
+      </nav>
+        
+  </nav>
+  
+<body><br>
+  <div class="row">
+    <div class="col-12" style="text-align: center;">
+      <h1>SENSUS</h1>
+      <h4 style="font-weight: initial;font-style: italic;">Le tour du monde à portée de main</h4>
+      <br><br><br><br>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-1">
+
+      </div>
+          <div class="col-5" style="text-align: center;">
+            <h2 style="text-align: start;">Qui sommes nous ?</h2>
+            <br><br><br>
+            <p>
+              Nous sommes bien plus qu'une simple entreprise. No
+              us sommes des explorateurs, des conteurs d'histoire
+              s, et des créateurs d'expériences uniques. Notre p
+              assion est ancrée dans la découverte, la diversité
+               culturelle, et l'excitation des voyages autour du
+                globe. En tant qu'équipe, nous croyons au pouvo
+                ir de la curiosité et à la magie de l'inattendu. 
+            </p><br<br><br><br><br>
+            <a href="abonnement.html"><button>Acheter nos boites</button></a>
+          </div>
+          <div class="col-5">
+            <img style="width: 80%;" src="./img/banniere.png">  
+          </div>
+          <div class="col-1">
+
+          </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <br>
+    </div>
+    <div class="col-6">
+      <h2>Pourquoi nous ?</h2>
+      <br><br><br>
+      <p style="text-align: center; word-wrap: break-word;overflow-wrap: break-word;">
+        Nous sommes passionnés par le voyage, la diversité cultur
+        elle et les nouvelles expériences gustatives. Notre 
+        objectif est de vous transporter vers des destinations 
+        uniques à travers nos Mystery Box. Nous vous offrons 
+        l'opportunité de découvrir le monde à travers des 
+        produits authentiques et de qualité, tout en vous 
+        donnant la chance de gagner des voyages exceptionnels. 
+        Chez nous, chaque boîte renferme une expérience de découverte sans pareille.
+      </p>
+      <div class="col-3">
+        <br>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h2>Nos partenaires</h2>
+      </div>
+    </div>
+
+      <div class="row">
+          <div class="col-6">
+            <a target="_blank" href="https://myjoliecandle.com/"><img style="width: 30%;" src="./img/partenaire.png" alt="partenaire"></a>
+          </div>
+          <div class="col-6">
+            <a  target="_blank" href="https://www.adopt.com/fr"><img style="width: 30%; margin-top: 4%;" src="./img/Logo_Adopt.png" alt="partenaire"></a>
+          </div>
+      </div>
+    </div>
+</div><br>
+
+
+<footer>
+  <div class="container3">
+    <div class="footer-info">
+      <h3>Contact</h3>
+      <p>Email : contact@sensus.com</p>
+      <p>Téléphone : 04 93 56 78 33</p>
+    </div>
+    <div class="footer-links">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Propose.html">Ce que l'on propose</a></li>
+        <li><a href="abonnement.html">Nos abonnements</a></li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <h3>Réseaux sociaux</h3>
+      <ul class="icone">
+        <li><a href="#"><img src="./img/icone-facebook-ronde.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="./img/iconeInstagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="./img/iconeSpotify.png" alt="Spotify"></a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h3>Abonnez-vous à notre newsletter</h3>
+      <form action="#" method="post">
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+          <button style="background-color: #6F8F72;" type="submit">S'abonner</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

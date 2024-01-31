@@ -1,0 +1,415 @@
+/* Styles pour le popup */
+
+
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin+Sans", sans-serif;
+}
+
+/* Style général du header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 30px; /* Ajout de rembourrage pour plus d'espace */
+  color: white;
+  text-align: center; /* Centrer le texte */
+}
+
+/* Style du logo */
+.logo {
+  margin-right: 50px; /* Espacement à droite du logo */
+  margin-left: 10%;
+}
+
+.logo img {
+  width: 200px; /* Ajustez la largeur du logo selon vos besoins */
+  height: auto;
+  max-width: 100%; /* Empêcher le logo de dépasser la largeur du conteneur */
+}
+
+/* Style de la navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 18px; /* Augmentation de la taille de la police pour les liens */
+  gap: 290px; /* Espacement entre les liens */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media Queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 40px; /* Espacement en bas du logo */
+    margin-right: 0; /* Ajustement pour la version mobile */
+    width: 130%;
+    margin-right: 12%;
+  }
+
+  nav ul {
+    margin-left: 0; /* Ajustement pour la version mobile */
+    padding-left: 0; /* Ajustement pour la version mobile */
+    gap: 100px; /* Espacement entre les liens pour la version mobile */
+  }
+}
+
+/*FinHeader*/
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, a{
+    font-family: "Josefin+Sans", sans-serif;
+}
+
+h2{
+  font-size: 400%;
+}
+
+
+
+a:hover{
+  color:#6F8F72;
+}
+  
+.logo img {
+    width: 50%;
+    align-items: center;
+}
+
+h1{
+    font-size: 350%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(35, 35, 35, 0.7);
+  background-size: cover;  
+  background-repeat: no-repeat; 
+  background-position: center 0,0000000000000000000000000000000000001%; 
+  color: white;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.row1 {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .vertical-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; /* Hauteur à 100% pour remplir la hauteur de l'écran */
+  width: 9%; /* Largeur de la barre par défaut */
+  background-color: #333; /* Couleur de la barre */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0.7;
+  }
+
+  .vertical-text {
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    font-size: 140%;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center ; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    height: 400%; /* Réglez la hauteur souhaitée pour chaque élément */
+  }
+
+  .vertical-bar:hover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Hauteur à 100% pour remplir la hauteur de l'écran */
+    width: 10%; /* Largeur de la barre par défaut */
+    background-color: #333; /* Couleur de la barre */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+    .vertical-text:hover {
+      color:#6F8F72;
+      text-align: center;
+      font-size: 160%;
+      display: flex; /* Utilisation de Flexbox */
+      align-items: center ; /* Centrage vertical */
+      justify-content: center; /* Centrage horizontal */
+      height: 400%; /* Réglez la hauteur souhaitée pour chaque élément */
+    }
+
+    /* Style pour la structure globale du footer */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style de la newsletter */
+.newsletter {
+  margin-left: 30%;
+}
+
+.newsletter h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input[type="email"] {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6F8F72;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #354F3D;
+}
+
+/* Media query pour le footer responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-group input[type="email"] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .input-group button {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+    
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  /* Style du texte aligné à droite */
+  .text-right {
+    position: absolute;
+    right: 20px; /* Ajustez selon votre besoin */
+    bottom: 20px; /* Ajustez selon votre besoin */
+    color: #fff; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+  }
+
+  .buttonF{
+    display: inline-block;
+    padding: 25px 29px;
+    background-color: #ffffff41;
+    color: black;
+    font-size: 21px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px black; 
+    cursor: pointer;
+    }
+    .buttonF:hover {
+      border: white solid 2px;
+      background-color: black;
+      color: white;
+  }
+
+  button{
+    display: inline-block;
+    padding: 25px 29px;
+    background-color: #ffffff41;
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px white; 
+    cursor: pointer;
+    }
+    button:hover {
+      border: white solid 2px;
+      background-color: black;
+      color: white;
+  }
+  
+  /* Media query pour la rendre responsive */
+  @media (max-width: 768px) {
+    .row1 {
+      height: 500px; /* Ajustez la hauteur pour les écrans de taille inférieure à 768px */
+    }
+  }
+  
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+    [class*="col-"]{
+        float:left;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .row:after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* styles.css */
+
+/* Reset des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icone{
+  width: 10%;
+  margin-left: 55px;
+}
+
+/* Style du footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Style des sections du footer */
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info,
+.footer-links,
+.social-media {
+  flex: 0 0 30%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Style du texte dans le footer */
+footer h3 {
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8  px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media query pour la rendre responsive */
+@media (max-width: 768px) {
+  .footer-info,
+  .footer-links,
+  .social-media {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  
+  h2{
+    width: 80%;
+  }
+
+  .vertical-bar{
+    display: none;
+}
+
+  .footer-info p,
+  .footer-links ul,
+  .social-media ul {
+    text-align: center;
+  }
+
+  .icone{
+    margin-left: 45%;
+  }
+}
+
+
+    
