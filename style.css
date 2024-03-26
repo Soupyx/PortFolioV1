@@ -118,7 +118,46 @@ header {
   .realisaton{
     width: 80%;
   }
-  
+
+  /* Style pour les blocs "Tarif" */
+#Tarif {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarif-bloc {
+    width: 25%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarif-bloc h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.tarif-bloc p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.tarif-bloc button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarif-bloc button:hover {
+    background-color: #0056b3;
+}
 
   .transform{
     transition: transform 0.3s ease;
@@ -164,6 +203,10 @@ header {
     body{
       text-align: center!important;
     }
+
+    .tarif-bloc {
+      width: 45%;
+  }
 
     header {                              
       flex-direction: column;
@@ -218,7 +261,7 @@ header {
     }
 
     h2{
-      font-size: 90%;
+      font-size: 100%;
     }
 
 
