@@ -7,16 +7,17 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f3f3f3;
-    padding: 10px 20px;
+    padding: 0 10px;
     background-color: white;
+  }
+
+  .logo{
+    width: 18em;
   }
 
   span{
     font-weight: bold;
     font-size: 110%;
-  }
-  .logoV{
-    border-radius: 30px;
   }
 
   h1{
@@ -27,11 +28,6 @@ header {
   a{
     text-decoration: none;
     color: black;
-  }
-  
-  .logo img {
-    max-width: 100px;
-    height: auto;
   }
   
   nav {
@@ -94,6 +90,7 @@ header {
     color: white;
     font-size: 130%;
     width: 100%;
+    text-align: start ;
   }
 
   .texte2 {
@@ -130,39 +127,26 @@ header {
   .transform:hover {
     transform: scale(1.2); 
   }
-
-  .container {
-    text-align: center;
-  }
-  
-  .skills {
-    display: flex;
-    flex-direction: column; /* Changer la direction en colonne */
-    align-items: center; /* Centrer les éléments horizontalement */
-  }
   
   .skill {
-    width: 100%; /* Utiliser toute la largeur disponible */
-    max-width: 50%; /* Limiter la largeur si nécessaire */
+    display: flex;
+    justify-content: space-around;
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3%; /* Espacement entre les compétences */
-  }
+    margin-bottom: 3%;
+}
+
+.skill .icons img {
+    margin: 50px;
+    width: 100%;
+    max-width: 7em
+}
+
   
   .skill h3 {
     margin-top: 0;
-  }
-  
-  .skill-level {
-    font-weight: bold;
-    margin-top: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 4px;
-    padding: 1.2% 0;
-    transition: width 0.5s ease-in-out;
   }
   
   .bloc {
@@ -174,8 +158,6 @@ header {
     text-align: center;
     background-color: #f9f9f9;
   }
-
-
 
   @media screen and (max-width: 768px) {
 
@@ -192,17 +174,21 @@ header {
   
     nav {
       width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .logo img {
-      width: 20%;
-      max-width: none;
+      margin-bottom: 10px;  
     }
   
     nav {
       flex-direction: column;
     }
+
+
+  .logo{
+    display: none;
+  }
+
+  .Moi{
+    display: none;
+  }
   
     h3 {
       margin: 10px 0;
